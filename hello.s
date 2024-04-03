@@ -22,4 +22,4 @@ _start:
     mov x16, #1
     svc 0
 
-    
+    ;adel

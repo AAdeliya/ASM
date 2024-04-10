@@ -12,5 +12,7 @@ public class Solution {
         return a; //return exact that number 
 
     }
+
+    
     
 }

@@ -36,5 +36,11 @@ public Address getAddress() {
 public void setAddress(Address address) {
     this.address = address;
 }
+public void sayHello(){
+    System.out.println("Hello");
 
+}
+public static void main(String[] args) {
+    
+}
 }

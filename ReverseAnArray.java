@@ -45,3 +45,52 @@ public class ReverseAnArray {
 //30
 //20
 //10
+
+
+
+//public class ReverseArray {
+    //public static void main(String[] args) {
+        // Initialize the array
+//         int[] array = {1, 2, 3, 4, 5};
+        
+//         // Reverse the array
+//         reverseArray(array);
+        
+//         // Print the reversed array
+//         System.out.print("Reversed array: ");
+//         for (int num : array) {
+//             System.out.print(num + " ");
+//         }
+//     }
+    
+//     public static void reverseArray(int[] array) {
+//         // Iterate through half of the array
+//         for (int i = 0; i < array.length / 2; i++) {
+//             // Swap the elements at index i and array.length - 1 - i
+//             int temp = array[i];
+//             array[i] = array[array.length - 1 - i];
+//             array[array.length - 1 - i] = temp;
+//         }
+//     }
+
+
+
+
+
+//in Python
+//# Define the original list
+// original_list = [1, 2, 3, 4, 5]
+
+// # Reverse the list using slicing
+// reversed_list = original_list[::-1]
+
+// # Print the reversed list
+// print("Reversed list:", reversed_list)
+// }
+
+
+
+//By specifying [::-1], you're telling Python to create a new 
+//list that starts from the end of the original list and moves towards 
+//the beginning with a step size of -1, 
+//effectively reversing the order of the elements.

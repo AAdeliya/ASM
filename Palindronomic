@@ -1,0 +1,63 @@
+To check if an array is palindromic, you need to verify if it remains the same when read forwards and backwards. In the case of an array, you'd compare the elements from the beginning of the array with the elements from the end. Here's how you can do it in Python:
+
+
+ def is_palindromic(arr):
+    # Get the length of the array
+    n = len(arr)
+    
+    # Check each element with its corresponding element from the end
+    for i in range(n // 2):
+        if arr[i] != arr[n - 1 - i]:
+            return False
+    return True
+
+# Example usage:
+arr1 = [1, 2, 3, 2, 1]
+arr2 = [1, 2, 3, 4, 5]
+
+print("Is arr1 palindromic?", is_palindromic(arr1))
+print("Is arr2 palindromic?", is_palindromic(arr2))
+
+
+The function is_palindromic() takes an array arr as input.
+It iterates through the array from index 0 to n/2 (where n is the length of the array).
+At each iteration, it compares the element at index i with the element at index n - 1 - i.
+If at any point the elements are not equal, the function returns False, indicating that the array is not palindromic.
+If the loop completes without finding any unequal elements, the function returns True, indicating that the array is palindromic.
+
+
+
+
+
+in Java
+
+public class PalindromicArray {
+    public static void main(String[] args) {
+        // Define the array
+        int[] arr1 = {1, 2, 3, 2, 1};
+        int[] arr2 = {1, 2, 3, 4, 5};
+        
+        // Check if the arrays are palindromic
+        System.out.println("Is arr1 palindromic? " + isPalindromic(arr1));
+        System.out.println("Is arr2 palindromic? " + isPalindromic(arr2));
+    }
+    
+    public static boolean isPalindromic(int[] arr) {
+        // Iterate through the array from both ends
+        for (int i = 0, j = arr.length - 1; i < j; i++, j--) {
+            // Compare elements at the current positions
+            if (arr[i] != arr[j]) {
+                return false; // If elements are not equal, it's not palindromic
+            }
+        }
+        return true; // If loop completes without finding any unequal elements, it's palindromic
+    }
+}
+
+
+
+The isPalindromic() method takes an integer array arr as input and returns true if it's palindromic and false otherwise.
+It iterates through the array from both ends simultaneously using two pointers i and j, starting from the beginning and end of the array, respectively.
+At each iteration, it compares the elements at positions i and j. If they are not equal, the method returns false, indicating that the array is not palindromic.
+If the loop completes without finding any unequal elements, the method returns true, indicating that the array is palindromic.
+In the example usage, arr1 is palindromic ([1, 2, 3, 2, 1] reads the same forwards and backwards), while arr2 is not ([1, 2, 3, 4, 5] does not read the same forwards and backwards).
